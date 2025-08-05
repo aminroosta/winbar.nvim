@@ -59,7 +59,7 @@ local winbar_file = function()
             end)
 
             for i = 1, #file_path_list do
-                value = value .. '%#' .. hl_winbar_path .. '#' .. file_path_list[i] .. ' ' .. opts.icons.seperator .. ' %*'
+                value = value .. '%#' .. hl_winbar_path .. '#' .. file_path_list[i] .. '' .. opts.icons.seperator .. '%*'
             end
         end
         value = value .. file_icon
